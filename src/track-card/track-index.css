@@ -1,0 +1,28 @@
+.Custom-text {
+  font-size: 13px;
+}
+.Amazon {
+  background-color: rgb(233, 233, 133);
+  color: black;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.Snapdeal {
+  background-color: rgb(202, 65, 65);
+  color: white;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.Flipkart {
+  background-color: rgb(27, 77, 216);
+  color: white;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+@media (max-width: 800px) {
+  .card-container {
+    width: 15rem;
+  }
+}

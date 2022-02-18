@@ -1,0 +1,16 @@
+.temp-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.spinner-contaier {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .temp-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,6 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px 0px rgb(170, 170, 170);
+}

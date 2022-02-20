@@ -1,6 +1,5 @@
 import {React, useEffect, useState} from 'react';
 import TrackCard from "../track-card";
-import {Link} from "react-router-dom";
 import "./index.css"
 const MyProducts = ({refresh}) => {
     const [products,setProducts] = useState([])
@@ -42,9 +41,8 @@ const MyProducts = ({refresh}) => {
         }).then(res => {
             return res.json()
         }).then(res => {
-            console.log(res)
             setProducts([...res.res])
-            if(res.length===0){
+            if(products.length===0){
                 seterr(false)
                 setnoproducts(true);
             }else{
@@ -69,7 +67,7 @@ const MyProducts = ({refresh}) => {
 
     if(noproducts){
         return(
-            <div className="container">
+        <div className="container">
             <h3>Your trackers</h3>
             <p>You have no products in tracking</p>
         </div>
